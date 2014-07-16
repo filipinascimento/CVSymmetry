@@ -59,6 +59,43 @@ We provide binaries for both windows 64bits and Mac OS X, Linux and Win32 users 
 http://tdm-gcc.tdragon.net/download
 
 
+##Input format
+The software uses the XNET network format. The file is a UTF-8 encoded text file as described bellow:
+
+```
+#vertices (num of vertices) (weighted|nonweighter)
+"name of vertex 0" [weight]
+"name of vertex 1" [weight]
+...
+#edges (nonweighted|weighted) (undirected|directed)
+from to [weight]
+...
+#v "property name" (n|v2|v3|s)
+property value of vertex 0
+property value of vertex 1
+...
+#e "property name" (n|v2|v3|s)
+property value of edge 0
+property value of edge 1
+...
+```
+
+Example of a square graph:
+
+```
+#vertices 4 nonweighted
+"Lower Left"
+"Upper Left"
+"Upper Right"
+"Lower Right"
+#edges nonweighted
+0 1
+0 3
+1 2
+2 3
+
+```
+
 ##TODO
  - Create updated makefiles and compiler tools.
  - Update the licence to be less restrictive.
