@@ -56,11 +56,15 @@ Input:
 
 We provide binaries for both windows 64bits and Mac OS X, Linux and Win32 users need to use the provided makefiles or scripts to compile the software. Note that windows and linux versions require OpenMP for parallel support. On linux, use GCC 4.8 or later as the default compiler. On windows we recomend the use of TDD-GCC toolchain:
 
+http://tdm-gcc.tdragon.net/download
 
 
 ##TODO
  - Create updated makefiles and compiler tools.
- - Update the licence t.
+ - Update the licence to be less restrictive.
  - Code documentation.
+ - Better overall documentation.
 
+#LICENSE
 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">CVSymmetry</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/filipinascimento/CVSymmetry" property="cc:attributionName" rel="cc:attributionURL">Filipi Nascimento Silva</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
