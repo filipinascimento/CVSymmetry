@@ -1,4 +1,4 @@
-TARGET = CVAccessibility
+TARGET = CVSymmetry
 LIBS = -lm
 DEFINITIONS = 
 CC = gcc
