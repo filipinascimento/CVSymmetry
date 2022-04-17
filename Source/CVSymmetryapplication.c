@@ -424,13 +424,13 @@ int CVSymmetryApplication(int argc, char** argv){
 		if(!exportCSV&&!exportMultiple){
 			CVIndex l;
 			for (l=2; l<=level; l++) {
-				fprintf(outputFile, "#v \"Backbone Accessibility h=%"CVIndexScan"\" n\n",l);
+				fprintf(outputFile, "#v \"Backbone Symmetry h=%"CVIndexScan"\" n\n",l);
 				for(i=0;i<theNetwork->verticesCount;i++){
 					CVSymmetryOutputParameters* vertexOutput = outputArray[i];
 					fprintf(outputFile,"%.6g\n",vertexOutput->normalizedBackboneAccessibility[l]);
 				}
 				
-				fprintf(outputFile, "#v \"Merged Accessibility h=%"CVIndexScan"\" n\n",l);
+				fprintf(outputFile, "#v \"Merged Symmetry h=%"CVIndexScan"\" n\n",l);
 				for(i=0;i<theNetwork->verticesCount;i++){
 					CVSymmetryOutputParameters* vertexOutput = outputArray[i];
 					fprintf(outputFile,"%.6g\n",vertexOutput->normalizedMergedAccessibility[l]);
@@ -523,8 +523,8 @@ int CVSymmetryApplication(int argc, char** argv){
 					fprintf(outputFile,"\t");
 				}
 				
-				fprintf(outputFile, "Backbone Accessibility h=%"CVIndexScan"\t",l);
-				fprintf(outputFile, "Merged Accessibility h=%"CVIndexScan,l);
+				fprintf(outputFile, "Backbone Symmetry h=%"CVIndexScan"\t",l);
+				fprintf(outputFile, "Merged Symmetry h=%"CVIndexScan,l);
 				
 				if(outputAccessed){
 					fprintf(outputFile,"\t");
