@@ -1,19 +1,23 @@
-#CVSymmetry
+# CVSymmetry
 CVSymmetry v0.2b
-
 
 Software for calculating the concentric symmetries described in http://arxiv.org/abs/1407.0224
 
-##Usage
+PLEASE, CONSIDER USING THE PYTHON PACKAGE INSTEAD:
+https://github.com/ABenatti/network_symmetry
 
-####Example Usage:
+
+
+## Usage
+
+#### Example Usage:
 Calculating symmetries up to level 4:
 
 ```
 ./CVSymmetry -c -M -l 4 inputnetwork.xnet output.tsv
 ```
 
-####Options
+#### Options
 
 ```
 Usage: ./CVSymmetry [options] -i|<inputnetwork> [<outputfile>]
@@ -52,14 +56,14 @@ Input:
                            the software will output to stdout)
 ```
 
-##Compile
+## Compile
 
 We provide binaries for both windows 64bits and Mac OS X, Linux and Win32 users need to use the provided makefiles or scripts to compile the software. Note that windows and linux versions require OpenMP for parallel support. On linux, use GCC 4.8 or later as the default compiler. On windows we recomend the use of TDD-GCC toolchain:
 
 http://tdm-gcc.tdragon.net/download
 
 
-##Input format
+## Input format
 The software uses the XNET network format. The file is a UTF-8 encoded text file as described bellow:
 
 ```
@@ -96,12 +100,12 @@ Example of a square graph:
 
 ```
 
-##TODO
+## TODO
  - Create updated makefiles and compiler tools.
  - Update the licence to be less restrictive.
  - Code documentation.
  - Better overall documentation.
 
-#LICENSE
+# LICENSE
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">CVSymmetry</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/filipinascimento/CVSymmetry" property="cc:attributionName" rel="cc:attributionURL">Filipi Nascimento Silva</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
